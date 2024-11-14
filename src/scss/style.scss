@@ -220,6 +220,7 @@
 
 }
 .wayOfWorking {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,7 +231,7 @@
         font-size: 47px;
         color: $antique-white;
         font-weight: bold;
-        line-height: 1.2;
+        line-height: 1;
         width: 83%;
         text-align: center  ;
     }
@@ -241,6 +242,9 @@
         align-items: center;
         background-color: $antique-white;
         width: 83%;
+        border-radius: 10px;
+        box-shadow: 0px 7px 17px 3px rgba(0,0,0,0.5);
+        margin-top: 20px;
 
         &__img {
             width: 60%;
@@ -249,9 +253,24 @@
 
         &__title {
             font-family: 'Caveat', 'sans-serif';
+            font-size: 27px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        &__paragraph {
+            font-family: "Red Hat Display", sans-serif;
+            font-size: 16px;
+            line-height: 1.825;
+            text-align: center;
+            margin-bottom: 10px;
         }
     }
+
+    &__article:last-child {
+        margin-bottom: 40px;
+    }
 }
+
 
 
 
