@@ -338,7 +338,8 @@
 }
 
 .skills {
-    padding: 10px;
+    padding: 10px 35px 80px;
+
     &__title {
         font-family: 'Caveat', 'sans-serif';
         font-size: 36px;
@@ -350,8 +351,75 @@
     }
 
     &__quote {
+        font-family: 'Red Hat Display', 'sans-serif';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.875;
+        color: $brown;
+        text-align: center;
+        margin-bottom: 41px;
 
     }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 60px;
+
+        &__items {
+            display: flex;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid gray;
+            position: relative;
+            transition: .5s;
+
+
+            &__link{
+                position: absolute;
+                inset: 0;
+            }
+
+            &__article {
+                align-content: center;
+                &__img {
+                    height: auto;
+                    width: 50%;
+                }
+                .logoPhp, .logoTailwind {
+                    width: 80%;
+                }
+                .logoFigma {
+                    width: 30%;
+                }
+
+                &__title {
+                    font-family: "Caveat", 'Sans-serif';
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                }
+
+                &__paragraph {
+                    font-family: "Red Hat Display", Sans-serif;
+                    font-size: 11px;
+                    font-weight: 200;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__items:hover{
+            background-color: $light-green;
+            transition: .5s;
+            transform: translateY(-20px);
+        }
+    }
+
+
 }
 
 
