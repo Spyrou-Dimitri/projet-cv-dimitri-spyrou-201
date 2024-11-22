@@ -337,6 +337,22 @@
     }
 }
 
+.skills {
+    padding: 10px;
+    &__title {
+        font-family: 'Caveat', 'sans-serif';
+        font-size: 36px;
+        font-weight: 600;
+        color: $light-black;
+        text-align: center;
+        line-height: 1.2;
+
+    }
+
+    &__quote {
+
+    }
+}
 
 
 
