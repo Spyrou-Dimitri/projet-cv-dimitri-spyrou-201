@@ -1,0 +1,87 @@
+.cta {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  &__article {
+    padding: 43px 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    transition: transform 0.8s, background-color 0s, border 0s;
+
+
+    &__img {
+      width: 23%;
+      height: auto;
+    }
+
+    &__title {
+      font-family: "Caveat",  "sans-serif";
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 33px;
+      text-align: left;
+
+      &__span {
+        display: block;
+      }
+    }
+    &__link {
+      font-family: "Caveat", "sans-serif";
+      font-size: 24px;
+      font-weight: 600;
+      text-decoration: none;
+      background-color: $dark-green;
+      width: auto;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: .3s;
+    }
+  }
+
+  .greenArticle {
+    background-color: #BAD577;
+    color: $antique-white;
+
+    .brownTitle {
+      color: $brown;
+    }
+    .whiteLink {
+      background-color: #386641;
+      color: $antique-white;
+    }
+    .whiteLink:hover{
+      background-color: transparent;
+      
+      border: 4px solid $light-green;
+      color: $brown;
+    }
+  }
+
+  .brownArticle {
+    background-color: $brown;
+    color: $brown;
+    .whiteTitle{
+      color: $antique-white;
+    }
+    .brownLink {
+      background-color: $light-green;
+      color: $brown;
+    }
+    .brownLink:hover{
+      background-color: transparent;
+      border: 4px solid $antique-white;
+      color: $antique-white;
+    }
+  }
+}
+.cta__article:hover{
+  background-color: $dark-green;
+}
+.brownLink:hover, .whiteLink:hover {
+  transform: scale(1.1);
+
+}
+
+
