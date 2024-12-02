@@ -452,7 +452,7 @@
             Découvrez mes passions
         </h2>
         <ul class="passions__list">
-            <li class="passions__list__items">
+            <li class="passions__list__items" id="oui">
                 <div class="passions__list__items__container">
                     <span class="passions__list__items__container__stars">
                     </span>
@@ -576,24 +576,39 @@
                 </article>
             </li>
         </ul>
-        <div class="passions__containerButtons">
-            <input type="radio" name="carousel" id=billard value="billard" checked>
-            <label class="hidden" for="billard">Billard</label>
-            <input type="radio" name="carousel" id=jeuxVideos value="jeuxVideos">
-            <label class="hidden" for="jeuxVideos">Jeux-vidéos</label>
-
-            <input type="radio" name="carousel" id="voyage" value="voyage">
-            <label class="hidden" for="voyage">ratonsLaveurs</label>
-
-            <input type="radio" name="carousel" id="ratonsLaveurs" value="ratonsLaveurs">
-            <label class="hidden" for="ratonsLaveurs" class="passions__list__items__article__img">Ratons-laveurs</label>
-
-            <input type="radio" name="carousel" id="code" value="code">
-            <label class="hidden" for="code">coder</label>
-        </div>
-
-
+        <ul class="passions__listButtons">
+            <li class="passions__listButtons__items">
+                <input type="radio" name="carousel" id=billard value="billard">
+                <label class="hidden" for="billard">Billard</label>
+            </li>
+            <li class="passions__listButtons__items">
+                <input type="radio" name="carousel" id=jeuxVideos value="jeuxVideos">
+                <label class="hidden" for="jeuxVideos">Jeux-vidéos</label>
+            </li>
+            <li class="passions__listButtons__items">
+                <input type="radio" name="carousel" id="voyage" value="voyage">
+                <label class="hidden" for="voyage">ratonsLaveurs</label>
+            </li>
+            <li class="passions__listButtons__items">
+                <input type="radio" name="carousel" id="ratonsLaveurs" value="ratonsLaveurs">
+                <label class="hidden" for="ratonsLaveurs" class="passions__list__items__article__img">Ratons-laveurs</label>
+            </li>
+            <li class="passions__listButtons__items">
+                <input type="radio" name="carousel" id="code" value="code">
+                <label class="hidden" for="code">coder</label>
+            </li>
+        </ul>
     </section>
+    <section id="vision" class="vision">
+        <h2 class="vision__title">
+            Ma vision du Web !
+        </h2>
+        <p class="vision__paragraph">
+            Chez Guapa juice, notre engagement envers la durabilité est plus qu’un simple concept, c’est une manière de vivre !  Nous croyons au pouvoir de la réutilisation, et c’est pourquoi nous proposons des bouteilles isothermes réutilisables. Rejoignez-nous pour réduire les déchets et adopter un mode de vie respectueux de l’environnement. Ensemble, nous pouvons avoir un impact positif sur notre planète !
+        </p>
+        <img class="vision__img" src="src/img/GuapaGourde.png" alt="Image montrant une gourde" width="1024" height="1024">
+    </section>
+
 </main>
 </body>
 </html>

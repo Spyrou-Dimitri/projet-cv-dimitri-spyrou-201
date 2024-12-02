@@ -6,6 +6,7 @@
 @import "main/profil";
 @import "main/skills";
 @import "main/passions";
+@import "main/vision";
 
 .hidden {
     clip: rect(0 0 0 0);
@@ -48,10 +49,6 @@
         }
     }
 }
-
-
-
-
 
 #burger__button {
     z-index: 2;
