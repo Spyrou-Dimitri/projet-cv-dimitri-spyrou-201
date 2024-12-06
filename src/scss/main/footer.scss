@@ -1,0 +1,42 @@
+.footer {
+  background-color: $antique-white;
+  padding: 25px 20px 8px;
+
+  &__img {
+    width: 31%;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__title {
+      font-size: 43px;
+      font-family: "Caveat", "sans-serif";
+      font-weight: 600;
+      line-height: 1.2;
+      color: $brown;
+    }
+
+    &__list {
+      font-family: "Red Hat Display", "sans-serif";
+      color: $dark-green;
+      line-height: 1.875;
+
+
+
+      .itemsJob::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+    }
+  }
+}
