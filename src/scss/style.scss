@@ -27,6 +27,14 @@
     background-color: #342E2E;
     min-height: 53px;
 
+    &__img {
+        z-index: 2;
+        width: 8.5em;
+        height: auto;
+        position: fixed;
+        margin-left: 10% ;
+    }
+
     &__list {
         position: fixed;
         top: 53px;

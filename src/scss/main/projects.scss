@@ -54,20 +54,23 @@
     }
 
     .orange {
-      background-color: #f0bc7c;
+      background: linear-gradient(to bottom, #f0a661, #f3a25e);
+
     }
     .rose {
-      background-color: #e4c5cb;
+      background: linear-gradient(to bottom, #eec4ce, #e9b9c4);
+
     }
     .turquoise {
-      background-color: #cae2c7;
+      background: linear-gradient(to bottom, #d9f0d4, #d3eec8);
       grid-column: span 2;
     }
     .jaune {
-      background-color: #efe19e
+      background: linear-gradient(to bottom, rgb(228, 203, 146), rgb(255, 235, 180));
     }
     .rouge {
-      background-color: #ecc6b6;
+      background: linear-gradient(to bottom, rgb(225, 184, 164), rgb(245, 210, 195));
+
     }
 
 
@@ -97,5 +100,25 @@
       transform: scale(1.1);
     }
   }
+}
+@media (width > $med-screen) {
+    .projects {
 
+        &__containner {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+
+            &__article {
+                max-width: 168px;
+                width: 100%;
+            }
+        }
+        &__cta {
+            font-size: 30px;
+            max-width: 402px;
+            width: 100%;
+        }
+    }
 }

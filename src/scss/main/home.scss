@@ -1,7 +1,15 @@
 #home {
-  padding: 68px 15px 15px;
-  background-color: $light-green;
-  img {
-    text-align: center;
-  }
+    padding: 68px 15px 15px;
+    background-color: $light-green;
+
+    img {
+        display: block;
+        max-width: 1791px;
+        object-fit: cover;
+        max-height: 55vh;
+        margin: auto;
+        width: 100%;
+        object-position: top;
+    }
 }
+

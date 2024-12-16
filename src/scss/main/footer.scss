@@ -1,42 +1,56 @@
 .footer {
-  background-color: $antique-white;
-  padding: 25px 20px 8px;
+    background-color: $antique-white;
+    padding: 25px 20px 8px;
 
-  &__img {
-    width: 31%;
-    height: auto;
-    margin: auto;
-    display: block;
-    margin-bottom: 45px;
-  }
-
-  &__article {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    &__title {
-      font-size: 43px;
-      font-family: "Caveat", "sans-serif";
-      font-weight: 600;
-      line-height: 1.2;
-      color: $brown;
+    &__img {
+        width: 30%;
+        max-width: 153px;
+        height: auto;
+        margin: auto;
+        display: block;
+        margin-bottom: 45px;
     }
 
-    &__list {
-      font-family: "Red Hat Display", "sans-serif";
-      color: $dark-green;
-      line-height: 1.875;
+    &__article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__title {
+            font-size: 43px;
+            font-family: "Caveat", "sans-serif";
+            font-weight: 600;
+            line-height: 1.2;
+            color: $brown;
+        }
+
+        &__list {
+            font-family: "Red Hat Display", "sans-serif";
+            color: $dark-green;
+            line-height: 1.875;
 
 
-
-      .itemsJob::before {
-        content: "";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-      }
+            .itemsJob::before {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+        }
     }
-  }
+}
+
+@media (width > $med-screen) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        &__img {
+            grid-column: span 2;
+        }
+    }
+
 }
