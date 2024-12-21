@@ -1,5 +1,6 @@
 @import "settings/reset";
 @import "settings/var";
+@import "settings/burger";
 @import "main/home";
 @import "main/projects";
 @import "main/wayOfWorking";
@@ -9,6 +10,7 @@
 @import "main/vision";
 @import "main/cta";
 @import "main/footer";
+@import "main/nav";
 
 .hidden {
     clip: rect(0 0 0 0);
@@ -19,104 +21,9 @@
     white-space: nowrap;
     width: 1px;
 }
-.nav {
-    z-index: 1;
-    font-family: "Caveat",sans-serif;
-    position: fixed;
-    width: 100%;
-    background-color: #342E2E;
-    min-height: 53px;
-
-    &__img {
-        z-index: 2;
-        width: 8.5em;
-        height: auto;
-        position: fixed;
-        margin-left: 10% ;
-    }
-
-    &__list {
-        position: fixed;
-        top: 53px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: $light-black;
-        transform-origin: top;
-        transform: scaleY(0);
-        transition: .3s;
-
-        &__link {
-            font-size: 28px;
-            line-height: 20px;
-            font-weight: 500;
-            padding: 10px 0;
-            display: inline-flex;
-            justify-content: center;
-            width: 100%;
-            text-decoration: none;
-            color: $antique-white;
-        }
-    }
-}
-
-#burger__button {
-    z-index: 2;
-    position: absolute;
-    top: 9px;
-    right: 24.5px;
-    width: 33px;
-    min-height: 33px;
-    appearance: none;
-    cursor: pointer;
-    background-color: rgba(0,0,0,.05);
-    border-radius: 3px;
-
-    &:checked ~ .nav__list {
-        transition: 0.5s;
-        transform: scale(100%);
-    }
-}
 
 
-.burger__wrapper {
-    z-index: 1;
-    position: absolute;
-    top: 18.5px;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 3px;
 
-    &__line {
-        background-color: #F2E8CF;
-        display: inline-block;
-        min-height: 3px;
-        border-radius: 2px;
-        width: 20px;
-        transition: all .3s ease;
-    }
-}
-
-.up{
-    transform-origin: left;
-}
-.down {
-    transform-origin: left;
-}
-
-.nav:has(#burger__button:checked) .burger__wrapper .up {
-    transform: rotate(37deg);
-}
-
-.nav:has(#burger__button:checked) .burger__wrapper .middle {
-    opacity: 0;
-}
-
-.nav:has(#burger__button:checked) .burger__wrapper .down {
-    transform: rotate(-37deg);
-}
 
 
 

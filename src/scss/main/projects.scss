@@ -111,7 +111,7 @@
 
 
             &__article {
-                max-width: 168px;
+                max-width: 124px;
                 width: 100%;
             }
         }
@@ -119,6 +119,30 @@
             font-size: 30px;
             max-width: 402px;
             width: 100%;
+        }
+    }
+}
+@media (min-width: 991px) {
+    .projects {
+
+        &__containner {
+
+            &__article {
+                max-width: 168px;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 1229px) {
+    .projects {
+
+        &__containner {
+
+            &__article {
+                max-width: 214px;
+                width: 100%;
+            }
         }
     }
 }
