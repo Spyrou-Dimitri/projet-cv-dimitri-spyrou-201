@@ -3,21 +3,21 @@
     background-color: $antique-white;
     position: relative;
     z-index: 0;
-    padding-bottom: 135px;
-
+    padding: 10px;
+    
+    .svgWayOfWorking {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     &__img {
         max-width: 258px;
         width: 100%;
         height: auto;
         transform: rotate(20deg);
-        position: absolute;
-        top: 0;
-        left: 40px;
     }
 
     &__title {
-        margin-top: 230px;
-        margin-left: 10px;
         font-family: "Caveat", "sans-serif";
         font-size: 49px;
         font-weight: 600;
@@ -33,13 +33,14 @@
         font-family: "Red Hat Display", sans-serif;
         font-size: 17px;
         word-break: break-word;
-        margin-left: 10px;
         line-height: 1.875;
         color: $brown;
 
     }
 
     &__article {
+        padding: 10px;
+
         background-color: $dark-green;
         width: 87%;
         margin: auto;
@@ -70,5 +71,65 @@
         z-index: -1;
         width: 100%;
         height: auto;
+    }
+}
+@media (width > $med-screen) {
+    .profil {
+        max-width: 1600px;
+        padding-top: 10rem;
+        display: grid;
+        grid-template-columns: 45% 45%;
+
+        grid-template-areas:
+                "img title"
+                "img paragraph"
+                "img article1"
+                "img article2"
+                "img article3";
+
+        &__img {
+            grid-area: img;
+            max-width: 746px;
+            min-width: 370px;
+            width: 100%;
+
+            //clamp ne fonctionne pas
+        }
+        &__title {
+            grid-area: title;
+            font-size: 81px;
+        }
+        &__article {
+            flex-direction: row;
+            gap: 20px;
+            min-height: 57px;
+            width: 55%;
+            &__title {
+                font-size: 36px;
+                margin-bottom: 0;
+            }
+            &__img {
+                max-width: 160px;
+                width: 20%;
+            }
+        }
+        .sociableArticle {
+            grid-area: article1;
+        }
+        .comiqueArticle{
+            grid-area: article2;
+        }
+        .passionneArticle {
+            grid-area: article3;
+        }
+    }
+}
+@media (width > 1024px) {
+    .profil {
+
+        &__article {
+            min-height: 94px;
+
+        }
     }
 }

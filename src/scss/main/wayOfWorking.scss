@@ -59,7 +59,6 @@
                     font-size: 16px;
                     line-height: 1.825;
                     text-align: center;
-                    margin-bottom: 10px;
                 }
             }
 
@@ -84,7 +83,11 @@
                     margin-top: 70px;
                 }
                 &__article {
+                    grid-template-rows: 130px auto auto;
 
+                    & *:not(p) {
+                        align-self: center;
+                    }
                     &__title {
 
                     }
