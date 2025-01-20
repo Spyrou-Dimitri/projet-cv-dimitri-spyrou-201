@@ -20,7 +20,7 @@
     }
 
     &__title {
-      font-family: "Caveat",  "sans-serif";
+      font-family: $caveat;
       font-size: 34px;
       font-weight: 600;
       line-height: 33px;
@@ -31,7 +31,7 @@
       }
     }
     &__link {
-      font-family: "Caveat", "sans-serif";
+      font-family: $caveat;
       font-size: 24px;
       font-weight: 600;
       text-decoration: none;

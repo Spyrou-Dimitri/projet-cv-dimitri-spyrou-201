@@ -3,7 +3,7 @@
   background-color: $light-green;
 
   &__title {
-    font-family: "Caveat", Sans-serif;
+    font-family: $caveat;
     font-weight: 600;
     font-size: 34px;
     line-height: 1.2;
@@ -45,14 +45,14 @@
           height: auto;
         }
         &__title {
-          font-family: 'Caveat','Sans-serif';
+          font-family: $caveat;
           font-size: 25px;
           font-weight: 600;
           text-align: center;
         }
 
         &__paragraph{
-          font-family: 'Red Hat Display', 'Sans-serif';
+          font-family: $redHat;
           font-size: 15px;
           line-height: 1.875;
           text-align: center;

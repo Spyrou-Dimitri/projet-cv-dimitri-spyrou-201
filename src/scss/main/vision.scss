@@ -3,7 +3,7 @@
   padding: 20px 15px;
 
   &__title {
-    font-family: "Caveat", "sans-serif";
+    font-family: $caveat;
     font-size: 59px;
     font-weight: 400;
     color: $antique-white;
@@ -12,7 +12,7 @@
     padding: 0 10px;
   }
   &__paragraph {
-    font-family: "Red Hat Display", "sans-serif";
+    font-family: $redHat;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.825;

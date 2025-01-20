@@ -18,14 +18,14 @@
 
         &__title {
             font-size: 43px;
-            font-family: "Caveat", "sans-serif";
+            font-family: $caveat;
             font-weight: 600;
             line-height: 1.2;
             color: $brown;
         }
 
         &__list {
-            font-family: "Red Hat Display", "sans-serif";
+            font-family: $redHat;
             color: $dark-green;
             line-height: 1.875;
 
