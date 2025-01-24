@@ -22,11 +22,31 @@
   }
   &__img {
     display: block;
-    width: 87%;
+    width: 95%;
     height: auto;
     margin:  10px auto;
     border: 4px solid white;
     border-radius: 18px;
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3), -10px -10px 15px rgba(0, 0, 0, 0.3);
   }
+}
+@media (width > $med-screen) {
+    .vision {
+        display: grid;
+        grid-template-areas:
+                            "title img"
+                            "paragraph img";
+        grid-template-columns: fit-content(580px) minmax(238px, 312px);
+        justify-content: center;
+        &__title {
+            grid-area: title;
+            align-self: end;
+        }
+        &__paragraph {
+            grid-area: paragraph;
+        }
+        &__img {
+            grid-area: img;
+        }
+    }
 }

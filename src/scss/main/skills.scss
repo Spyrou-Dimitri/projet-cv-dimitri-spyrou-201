@@ -1,83 +1,126 @@
 .skills {
-  padding: 10px 35px 81px;
+    padding: 10px 35px 81px;
+    background-color: #F2F2F2;
+    background-image: url("https://guapajuice.com/wp-content/uploads/2023/09/Fruit_BG.png");
+    background-repeat: no-repeat;
 
-  &__title {
-    font-family: $caveat;
-    font-size: 36px;
-    font-weight: 600;
-    color: $light-black;
-    text-align: center;
-    line-height: 1.2;
+    &__title {
+        font-family: $caveat;
+        font-size: 36px;
+        font-weight: 600;
+        color: $light-black;
+        text-align: center;
+        line-height: 1.2;
 
-  }
-
-  &__quote {
-    font-family: $redHat;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.875;
-    color: $brown;
-    text-align: center;
-    margin-bottom: 41px;
-
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 60px;
-
-    &__items {
-      display: flex;
-      padding: 10px;
-      background-color: white;
-      text-align: center;
-      border-radius: 10px;
-      border: 1px solid gray;
-      position: relative;
-      transition: .5s;
-      justify-content: center;
-
-
-      &__link{
-        position: absolute;
-        inset: 0;
-      }
-
-      &__article {
-        align-content: center;
-        &__img {
-          height: auto;
-          width: 50%;
-        }
-        .logoPhp, .logoTailwind {
-          width: 80%;
-        }
-        .logoFigma {
-          width: 30%;
-        }
-
-        &__title {
-          font-family: $caveat;
-          font-size: 22px;
-          font-weight: 600;
-          line-height: 1.2;
-        }
-
-        &__paragraph {
-          font-family: $redHat;
-          font-size: 11px;
-          font-weight: 200;
-          line-height: 20px;
-        }
-      }
     }
 
-    &__items:hover{
-      background-color: $light-green;
-      transition: .5s;
-      transform: translateY(-20px);
+    &__quote {
+        font-family: $redHat;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.875;
+        color: $brown;
+        text-align: center;
+        margin-bottom: 41px;
+
     }
-  }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 60px;
+
+        &__items {
+            display: flex;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+            transition: .5s;
+            justify-content: center;
+
+
+            &__link {
+                position: absolute;
+                inset: 0;
+            }
+
+            &__article {
+                align-content: center;
+
+                &__img {
+                    height: auto;
+                    width: 50%;
+                    margin: 20px 0;
+                }
+
+                .logoPhp, .logoTailwind {
+                    width: 80%;
+                }
+
+                .logoFigma {
+                    width: 30%;
+                }
+
+                &__title {
+                    font-family: $caveat;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                }
+
+                &__paragraph {
+                    font-family: $redHat;
+                    font-size: 11px;
+                    font-weight: 200;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__items:hover {
+            background-color: $light-green;
+            transition: .5s;
+            transform: translateY(-20px);
+        }
+    }
+}
+@media (width > $med-screen) {
+
+    .skills {
+
+        &__list {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            max-width: 720px;
+            margin: auto;
+
+            &__items {
+                max-width: 116px;
+            }
+        }
+    }
+}
+@media (width > $wide-screen) {
+    .skills {
+
+        &__list {
+
+            max-width: 940px;
+        }
+    }
+}
+@media (width > 1239px) {
+    .skills {
+
+        &__list {
+            max-width: 1170px;
+
+            &__items {
+                max-width: 154px;
+            }
+        }
+    }
 }
