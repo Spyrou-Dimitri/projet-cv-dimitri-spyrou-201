@@ -1,5 +1,10 @@
-.footer {
+footer {
     background-color: $antique-white;
+
+}
+.footer {
+    max-width: 1200px;
+    margin: auto;
     padding: 25px 20px 8px;
 
     &__img {
