@@ -1,73 +1,148 @@
 .passions {
-  padding: 0 25px;
-  background-color: $light-green;
+    padding: 0 25px;
+    background-image: url("https://guapajuice.com/wp-content/uploads/2023/09/Capture-decran-2023-09-12-a-00.55.58.png");
+    background-position: center center;
+    background-size: cover;
+    background-color: #00000055;
 
-  &__title {
-    font-family: $caveat;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 1.2;
-    color: $antique-white;
-    padding-top: 10px;
-    margin-bottom: 20px;
-  }
+    &__title {
+        font-family: $caveat;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 1.2;
+        color: $antique-white;
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
 
-  &__list {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 15px;
 
 
-    &__items {
-      min-width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: $antique-white;
-      padding: 9px 0;
-      border-radius: 15px;
-      scroll-snap-align: start;
-      margin: 0 15px;
+        &__items {
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $antique-white;
+            padding: 9px 0;
+            border-radius: 15px;
+            scroll-snap-align: start;
 
-      &__container {
+            &__container {
 
-        &__stars::before {
-          content: "\002605";
+                &__stars::before {
+                    content: "\002605";
+                }
+            }
+
+            &__article {
+                &__img {
+
+                    width: 100%;
+                    height: auto;
+                }
+
+                &__title {
+                    font-family: $caveat;
+                    font-size: 25px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                &__paragraph {
+                    font-family: $redHat;
+                    font-size: 15px;
+                    line-height: 1.875;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+            }
         }
-      }
 
-      &__article{
-        &__img {
+        &__items:first-child {
+            margin-left: 0;
 
-          width: 100%;
-          height: auto;
         }
+
+    }
+
+    &__listButtons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        &__items {
+            & input {
+
+            }
+        }
+    }
+}
+@media (width > $med-screen) {
+    .passions {
+        display: grid;
+        grid-template-areas:
+                "title article"
+                "title article"
+                "----- radio";
+        grid-template-columns: 215px 475px;
+        row-gap: 50px;
+        padding: 3em 4% 1em;
+        margin: auto;
+        justify-content: center;
+
         &__title {
-          font-family: $caveat;
-          font-size: 25px;
-          font-weight: 600;
-          text-align: center;
+            text-align: center;
+            grid-area: title;
+            align-self: center;
         }
+        &__list {
+            grid-area: article;
 
-        &__paragraph{
-          font-family: $redHat;
-          font-size: 15px;
-          line-height: 1.875;
-          text-align: center;
-          margin-bottom: 30px;
+            &__items {
+                min-width: 225px;
+
+                &__article {
+
+                    &__img {
+                    }
+                    &__paragraph {
+                        margin: 0;
+                    }
+                }
+
+            }
         }
-      }
+        &__listButtons {
+            grid-area: radio;
+        }
     }
-    &__items:first-child {
-      margin-left: 0;
+}
+@media (width > $wide-screen) {
+    .passions {
+        grid-template-columns: 238px 608px;
+        &__title {
+            text-align: left;
+        }
+        &__list {
+            &__items {
+                min-width: 295px;
 
+                &__article {
+
+                    &__img {
+                    }
+                }
+            }
+        }
     }
-
-  }
-  &__listButtons {
-    display: flex;
-    justify-content: space-around;
-  }
+}
+@media (width > 1229) {
+    
 }

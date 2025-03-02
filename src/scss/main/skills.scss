@@ -2,7 +2,8 @@
     padding: 10px 35px 81px;
     background-color: #F2F2F2;
     background-image: url("https://guapajuice.com/wp-content/uploads/2023/09/Fruit_BG.png");
-    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
 
     &__title {
         font-family: $caveat;
