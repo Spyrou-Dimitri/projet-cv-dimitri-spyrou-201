@@ -1,9 +1,12 @@
-.passions {
-    padding: 0 25px;
-    background-image: url("https://guapajuice.com/wp-content/uploads/2023/09/Capture-decran-2023-09-12-a-00.55.58.png");
+.bgPassions {
+    background-image: url("../../../src/img/bgPassions.png");
     background-position: center center;
     background-size: cover;
     background-color: #00000055;
+}
+.passions {
+    padding: 0 25px;
+
 
     &__title {
         font-family: $caveat;
@@ -83,7 +86,15 @@
             }
         }
     }
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        content: '';
+        background-color: black;
+    }
 }
+
 @media (width > $med-screen) {
     .passions {
         display: grid;
@@ -126,13 +137,15 @@
 }
 @media (width > $wide-screen) {
     .passions {
-        grid-template-columns: 238px 608px;
+        max-width: 1200px;
+        grid-template-columns: auto 760px;
+        gap: 30px;
         &__title {
             text-align: left;
         }
         &__list {
             &__items {
-                min-width: 295px;
+                min-width: 242px;
 
                 &__article {
 
