@@ -2,14 +2,45 @@
     padding: 68px 15px 15px;
     background-color: $light-green;
 
-    img {
-        display: block;
-        max-width: 1791px;
-        object-fit: cover;
-        max-height: 55vh;
+    div {
         margin: auto;
-        width: 100%;
-        object-position: top;
+        max-width: 1200px;
+        img {
+            display: block;
+            object-fit: cover;
+            margin: auto;
+            max-height: 55vh;
+            max-width: 1200px;
+            width: 100%;
+            object-position: top;
+        }
+    }
+
+}
+@media (width > $med-screen) {
+    #home {
+
+        div {
+
+            img {
+
+                max-height: 65vh;
+
+            }
+        }
+    }
+}
+@media (width > $wide-screen) {
+    #home {
+
+        div {
+
+            img {
+
+                max-height: 80vh;
+
+            }
+        }
     }
 }
 

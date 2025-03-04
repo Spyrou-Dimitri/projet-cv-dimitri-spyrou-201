@@ -91,6 +91,9 @@
 @media (width > $med-screen) {
 
     .skills {
+        &__title {
+            font-size: 70px;
+        }
 
         &__list {
             grid-template-columns: repeat(6, 1fr);
@@ -106,6 +109,7 @@
 }
 @media (width > $wide-screen) {
     .skills {
+
 
         &__list {
 

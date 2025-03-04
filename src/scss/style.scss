@@ -21,8 +21,51 @@
     white-space: nowrap;
     width: 1px;
 }
-body {
 
+@keyframes showUp {
+
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.showUp {
+    animation: showUp 1s;
+    transition: .8s;
+    opacity: 1;
+}
+@keyframes showLeft {
+    0% {
+
+        transform: translateX(-400px)  rotate(20deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0)  rotate(20deg);
+        opacity: 1;
+    }
+}
+.showLeft {
+    animation: showLeft 1s;
+    transition: .8s;
+    opacity: 1;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.appear {
+    animation: appear 1s;
+    transition: .5s linear;
+    opacity: 1;
 }
 
 
